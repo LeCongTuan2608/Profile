@@ -13,16 +13,32 @@ html {
 
 body {
   width: 100%;
-  height: 100%;
+  height: auto;
+}
+
+.container {
+  padding-top: 100px;
+  padding-bottom: 200px;
+  width: 100%;
+  height: auto;
+  position: relative;
   background-image: linear-gradient(-45deg, #ea9479, #e7588f, #4fb2d6, #46cdae);
   background-attachment: fixed;
 }
 
-.container {
-  padding-top: 50px;
-  width: 100%;
-  height: 100%;
-  position: relative;
+.bgr-color-1 {
+  background-image: linear-gradient(90deg, #74EBD5 0%, #9FACE6 100%);
+  background-attachment: fixed;
+}
+
+.bgr-color-2 {
+  background-image: linear-gradient(to right, #eea2a2 0%, #bbc1bf 19%, #57c6e1 42%, #b49fda 79%, #7ac5d8 100%);
+  background-attachment: fixed;
+}
+
+.bgr-color-3 {
+  background-image: linear-gradient(to top, #88d3ce 0%, #6e45e2 100%);
+  background-attachment: fixed;
 }
 
 .palette {
@@ -30,6 +46,37 @@ body {
   top: 3%;
   right: 5%;
   font-size: 40px;
+}
+
+.list-color ul {
+  position: absolute;
+}
+
+.palette:hover ul li {
+  display: block;
+}
+
+.list-color ul li:first-child {
+  margin-bottom: 10px;
+  background-image: linear-gradient(90deg, #74EBD5 0%, #9FACE6 100%);
+}
+
+.list-color ul li:nth-of-type(2) {
+  margin-bottom: 10px;
+  background-image: linear-gradient(to right, #eea2a2 0%, #bbc1bf 19%, #57c6e1 42%, #b49fda 79%, #7ac5d8 100%);
+}
+
+.list-color ul li:last-child {
+  background-image: linear-gradient(to top, #88d3ce 0%, #6e45e2 100%);
+}
+
+.list-color ul li {
+  list-style-type: none;
+  display: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 100rem;
+  box-shadow: #3d3d3d -1px 2px 5px 2px;
 }
 
 .toolbar {
@@ -82,8 +129,11 @@ body {
   flex-direction: column;
 }
 
-.card-info {
+.contents > div {
   width: 60%;
+}
+
+.card-info {
   background-color: rgba(255, 255, 255, 0.3);
   border-radius: 15px;
 }
@@ -160,10 +210,11 @@ body {
   border-radius: 40px;
   padding: 5px;
   font-size: 18px;
-  top: -90%;
+  top: -95%;
   left: -50%;
   font-weight: 700;
   animation: intro ease 0.5s;
+  z-index: 2;
 }
 
 .navigation-fb:hover::after {
@@ -173,9 +224,10 @@ body {
   height: 13px;
   background-color: #999ff8;
   clip-path: polygon(50% 100%, 0 0, 100% 0);
-  top: -30%;
+  top: -25%;
   left: 30%;
   animation: intro ease 0.5s;
+  z-index: 1;
 }
 
 .navigation-ins {
@@ -197,10 +249,11 @@ body {
   border-radius: 40px;
   padding: 5px;
   font-size: 18px;
-  top: -90%;
+  top: -95%;
   left: -50%;
   font-weight: 700;
   animation: intro ease 0.5s;
+  z-index: 2;
 }
 
 .navigation-ins:hover::after {
@@ -210,9 +263,10 @@ body {
   height: 13px;
   background-color: #40adb1;
   clip-path: polygon(50% 100%, 0 0, 100% 0);
-  top: -30%;
+  top: -25%;
   left: 30%;
   animation: intro ease 0.5s;
+  z-index: 1;
 }
 
 .contact {
@@ -256,6 +310,18 @@ body {
   background-clip: text;
 }
 
+.text-color-1 {
+  background-image: linear-gradient(-225deg, #AC32E4 0%, #7918F2 48%, #4801FF 100%) !important;
+}
+
+.text-color-2 {
+  background-image: linear-gradient(-225deg, #A445B2 0%, #D41872 52%, #FF0066 100%) !important;
+}
+
+.text-color-3 {
+  background-image: linear-gradient(to top, #50cc7f 0%, #f5d100 100%) !important;
+}
+
 .intro-content {
   padding: 30px 20px 50px 20px;
   background-color: rgba(255, 255, 255, 0.3);
@@ -266,12 +332,12 @@ body {
   margin: 30px 0 100px 0;
 }
 
-.skills-content ul {
+.skills-content .list-skills {
   display: flex;
   justify-content: space-around;
 }
 
-.skills-content ul li {
+.skills-content .list-skills div {
   padding: 5%;
   border-radius: 20px;
   background-color: rgba(255, 255, 255, 0.3);
@@ -281,7 +347,7 @@ body {
   font-size: 20px;
 }
 
-.skills-content ul li ion-icon {
+.skills-content .list-skills div ion-icon {
   font-size: 50px;
 }
 
@@ -299,6 +365,12 @@ body {
   border-radius: 15px;
   text-align: center;
   cursor: pointer;
+}
+
+.box:hover {
+  transition-duration: 0.5s;
+  transform: scale(1.1, 1.1);
+  box-shadow: rgba(130, 130, 130, 0.773) 0px 1px 5px 2px;
 }
 
 .box > ion-icon {
@@ -330,6 +402,7 @@ body {
   background-color: white;
   box-shadow: #898989 0px 5px 10px 0px;
   text-align: center;
+  animation: intro ease 1s;
 }
 
 .close {
@@ -366,10 +439,66 @@ body {
 
 @keyframes intro {
   from {
-    transform: translateY(50%);
+    transform: translateY(100%);
   }
   to {
-    transform: translateY(0%);
+    transform: translateY(-50%);
+  }
+}
+@media screen and (max-width: 1060px) {
+  .contents {
+    display: block;
+  }
+
+  .contents > div {
+    margin: 0 10% 0 10%;
+    width: 80%;
+  }
+}
+@media screen and (max-width: 820px) {
+  .contents {
+    display: block;
+  }
+
+  .personal-information {
+    display: block;
+  }
+
+  .image {
+    border-right: none;
+    border-bottom: 3px solid;
+    border-color: #4fb2d6;
+    padding-right: 0;
+    padding-bottom: 30px;
+  }
+
+  .contact {
+    padding-top: 30px;
+    padding-left: 0px;
+  }
+}
+@media screen and (max-width: 567px) {
+  .image {
+    border-right: none;
+    border-bottom: 3px solid;
+    border-color: #4fb2d6;
+    padding-right: 0;
+    padding-bottom: 30px;
+  }
+
+  .contact {
+    padding-top: 30px;
+    display: block;
+  }
+}
+@media screen and (max-width: 415px) {
+  .palette {
+    display: none;
+  }
+}
+@media screen and (max-width: 391px) {
+  .palette {
+    display: none;
   }
 }
 
