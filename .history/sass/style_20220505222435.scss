@@ -247,21 +247,16 @@ background-color: #a5e296;
     flex: 1;
     display: flex;
     padding-left: 20px;
-    
 }
 .contact-info{
     flex: 1;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    
 }
 .contact-info span{
     font-size: 18px;
     overflow: hidden;
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis; 
 }
 
 .card-intro{
@@ -366,6 +361,7 @@ background-color: #a5e296;
     border-radius: 15px;
     background-color: white;
     box-shadow: rgb(137, 137, 137) 0px 5px 10px 0px;
+    text-align: center;
     animation: intro ease 1s;
 
 }
@@ -388,9 +384,6 @@ background-color: #a5e296;
 }
 .list-project ul li{
     list-style-type: none;
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis; 
 }
 .list-project ul li a{
     text-decoration: none;
@@ -424,9 +417,9 @@ background-color: #a5e296;
 
     }
 }
-@media screen and (max-width:880px) {
+@media screen and (max-width:820px) {
     .contents > div{
-        width: 80%;
+        width: 40%;
     }
     .personal-information{
         display: block;
@@ -441,24 +434,10 @@ background-color: #a5e296;
     .contact{
         padding-top: 30px;
         padding-left: 0px;
-    }
-    .list-project{
-        left: 25%;
-        right: 25%;
-    }
-}
-@media screen and (max-width:710px){
-    .list-project{
-        left: 15%;
-        right: 15%;
-    }
-    .contact{
-        overflow: hidden;
-        white-space: nowrap;
-        text-overflow: ellipsis; 
-    }
 
+    }
 }
+
 @media screen and (max-width:567px){
     .contents{
         display: block;
@@ -476,11 +455,9 @@ background-color: #a5e296;
     .contact{
         padding-top: 30px;
         display: block;
-
     }
 }
 @media  screen and (max-width: 415px) {
-
     .skills-content .list-skills {
         flex-direction: column;
         align-items: center;
@@ -490,8 +467,5 @@ background-color: #a5e296;
         width: 100px;
         height: 100px;
     }
-    .list-project{
-        left: 5%;
-        right: 5%;
-    }
+    
 }

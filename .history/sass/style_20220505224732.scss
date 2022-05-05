@@ -247,21 +247,19 @@ background-color: #a5e296;
     flex: 1;
     display: flex;
     padding-left: 20px;
-    
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis; 
 }
 .contact-info{
     flex: 1;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    
 }
 .contact-info span{
     font-size: 18px;
     overflow: hidden;
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis; 
 }
 
 .card-intro{
@@ -452,12 +450,6 @@ background-color: #a5e296;
         left: 15%;
         right: 15%;
     }
-    .contact{
-        overflow: hidden;
-        white-space: nowrap;
-        text-overflow: ellipsis; 
-    }
-
 }
 @media screen and (max-width:567px){
     .contents{
@@ -476,7 +468,6 @@ background-color: #a5e296;
     .contact{
         padding-top: 30px;
         display: block;
-
     }
 }
 @media  screen and (max-width: 415px) {

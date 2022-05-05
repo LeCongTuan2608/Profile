@@ -453,9 +453,14 @@ background-color: #a5e296;
         right: 15%;
     }
     .contact{
+        width: 100%;
+
         overflow: hidden;
         white-space: nowrap;
         text-overflow: ellipsis; 
+    }
+    .contact-info {
+flex: 1;
     }
 
 }

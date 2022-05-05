@@ -453,6 +453,10 @@ background-color: #a5e296;
         right: 15%;
     }
     .contact{
+        flex: 1;
+    }
+    .contact-info span{
+        width: 100%;
         overflow: hidden;
         white-space: nowrap;
         text-overflow: ellipsis; 
