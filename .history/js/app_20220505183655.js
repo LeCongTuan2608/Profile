@@ -14,20 +14,13 @@ box_container.addEventListener('click', function () {
 list_project.addEventListener('click', function (event) {
    event.stopPropagation();
 });
+
 const palette = document.querySelector('.palette');
-const list_color = document.querySelector('.list-color ul');
 var bgr_colors = document.querySelectorAll('.bgr-color');
 const container = document.querySelector('.container');
 const text_colors = document.querySelectorAll('.title h1');
-var click = true;
 palette.addEventListener('click', function () {
-   if (click) {
-      list_color.classList.add('open');
-      click = false;
-   } else {
-      list_color.classList.remove('open');
-      click = true;
-   }
+   palette.classList.add('open');
 });
 
 function bgr_change() {

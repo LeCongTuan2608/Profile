@@ -39,9 +39,9 @@ body{
     background-attachment: fixed;
 }
 .palette{
-    position: fixed;
-    top: 3%;
-    right: 4%;
+    position: absolute;
+    top: 1.5%;
+    right: 3%;
     font-size: 40px;
 }
 .list-color ul{
@@ -401,47 +401,46 @@ background-color: #a5e296;
     }
 }
 @media screen and (max-width:1060px) {
-    .personal-information{
-        display: block;
+    .container{
+        // align-content: center;
     }
-    .image{
-        border-right: none;
-        border-bottom: 3px solid;
-        border-color: #4fb2d6;
-        padding-right: 0; 
-        padding-bottom: 30px;
-    }
-    .contact{
-        padding-top: 30px;
-        padding-left: 0px;
-
-    }
-}
-@media screen and (max-width:820px) {
-    .personal-information{
-        display: block;
-    }
-    .image{
-        border-right: none;
-        border-bottom: 3px solid;
-        border-color: #4fb2d6;
-        padding-right: 0; 
-        padding-bottom: 30px;
-    }
-    .contact{
-        padding-top: 30px;
-        padding-left: 0px;
-
-    }
-}
-
-@media screen and (max-width:567px){
-    .contents{
+    .contents {
         display: block;
     }
     .contents > div{
-        margin: 0 auto;
+        // margin: 0 10% 0 10%;
     }
+}
+@media screen and (max-width:820px) {
+    .contents {
+        display: block;
+    }
+    .personal-information{
+        display: block;
+    }
+    .image{
+        border-right: none;
+        border-bottom: 3px solid;
+        border-color: #4fb2d6;
+        padding-right: 0; 
+        padding-bottom: 30px;
+    }
+    .contact{
+        padding-top: 30px;
+        padding-left: 0px;
+
+    }
+}
+// @media screen and (max-width:677px) {
+//     .contents {
+//         display: block;
+//     }
+//     .contents > div{
+//         margin: 0 10% 0 10%;
+//         width: 79%;
+//     }
+// }
+@media screen and (max-width:567px){
     .image{
         border-right: none;
         border-bottom: 3px solid;
@@ -455,14 +454,18 @@ background-color: #a5e296;
     }
 }
 @media  screen and (max-width: 415px) {
-    .skills-content .list-skills {
-        flex-direction: column;
-        align-items: center;
-        gap: 20px;
-    }
-    .skills-content .list-skills > div{
-        width: 100px;
-        height: 100px;
+    .palette{
+        // display: none;
     }
     
+}
+@media screen and (max-width:391px){
+    .palette{
+        // display: none;
+    }
+}
+@media screen and (max-width:391px){
+    .palette{
+        // display: none;
+    }
 }

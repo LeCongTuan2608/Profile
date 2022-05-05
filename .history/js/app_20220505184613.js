@@ -26,7 +26,6 @@ palette.addEventListener('click', function () {
       click = false;
    } else {
       list_color.classList.remove('open');
-      click = true;
    }
 });
 
