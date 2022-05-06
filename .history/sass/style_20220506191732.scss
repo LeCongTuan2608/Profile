@@ -715,7 +715,8 @@ background-color: #a5e296;
 }
 @media  screen and (max-width: 415px) {
     .contact{
-        margin: 0;
+        padding-top: 30px;
+        display: block;
     }
     .skills-content .list-skills {
         flex-direction: column;

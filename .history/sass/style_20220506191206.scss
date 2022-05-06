@@ -688,8 +688,6 @@ background-color: #a5e296;
         overflow: hidden;
         white-space: nowrap;
         text-overflow: ellipsis; 
-        margin: 0 20% 0 20%;
-
     }
 
 }
@@ -710,13 +708,11 @@ background-color: #a5e296;
     .contact{
         padding-top: 30px;
         display: block;
-        margin: 0 10% 0 10%;
+
     }
 }
 @media  screen and (max-width: 415px) {
-    .contact{
-        margin: 0;
-    }
+
     .skills-content .list-skills {
         flex-direction: column;
         align-items: center;
