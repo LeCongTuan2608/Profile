@@ -66,16 +66,16 @@ function bgr_change() {
    }
 }
 bgr_change();
-// bắt sự kiện khi scroll
+
 const btn_user = document.querySelector('.user');
 const btn_information = document.querySelector('.information');
 const btn_skills = document.querySelector('.skills');
 
-// window.addEventListener('scroll', function () {
-//    document.getElementById('showScroll');
-//    console.log(window.pageYOffset);
-// });
-btn_user.addEventListener('click', () => {
+window.addEventListener('scroll', function () {
+   document.getElementById('showScroll');
+   console.log(window.pageYOffset);
+});
+btn_user.addEventListener('click', (e) => {
    document.querySelector('.container').scrollIntoView({ behavior: 'smooth' });
 });
 btn_information.addEventListener('click', () => {

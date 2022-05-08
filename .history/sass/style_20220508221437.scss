@@ -299,7 +299,7 @@ body{
 }
 
 .toolbar{
-    width:  auto;
+    width:  20%;
     border-radius: 20px;
     position: fixed;
     font-size: 25px;
@@ -320,7 +320,6 @@ body{
     display: inline;
     border-radius: 100rem;
     cursor: pointer;
-    padding: 5px 10px 0 10px;
 }
 .toolbar ul li ion-icon{
     padding: 5px;
@@ -718,7 +717,9 @@ background-color: #a5e296;
         display: block;
         margin: 0 10% 0 10%;
     }
-
+    .toolbar{
+        width: auto;
+    }
 }
 @media  screen and (max-width: 415px) {
     .contact{

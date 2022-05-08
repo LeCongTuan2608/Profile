@@ -299,7 +299,7 @@ body{
 }
 
 .toolbar{
-    width:  auto;
+    width:  20%;
     border-radius: 20px;
     position: fixed;
     font-size: 25px;
@@ -320,7 +320,7 @@ body{
     display: inline;
     border-radius: 100rem;
     cursor: pointer;
-    padding: 5px 10px 0 10px;
+    padding: 0 5px 0 5px;
 }
 .toolbar ul li ion-icon{
     padding: 5px;
@@ -697,7 +697,9 @@ background-color: #a5e296;
         margin: 0 20% 0 20%;
 
     }
-
+    .toolbar{
+        width: auto;
+    }
 }
 @media screen and (max-width:567px){
     .contents{

@@ -66,21 +66,16 @@ function bgr_change() {
    }
 }
 bgr_change();
-// bắt sự kiện khi scroll
+
 const btn_user = document.querySelector('.user');
 const btn_information = document.querySelector('.information');
 const btn_skills = document.querySelector('.skills');
 
-// window.addEventListener('scroll', function () {
-//    document.getElementById('showScroll');
-//    console.log(window.pageYOffset);
-// });
-btn_user.addEventListener('click', () => {
-   document.querySelector('.container').scrollIntoView({ behavior: 'smooth' });
+window.addEventListener('scroll', function () {
+   document.getElementById('showScroll');
+   console.log(window.pageYOffset);
 });
-btn_information.addEventListener('click', () => {
-   document.querySelector('.card-intro').scrollIntoView({ behavior: 'smooth' });
-});
-btn_skills.addEventListener('click', () => {
-   document.querySelector('.my-skills').scrollIntoView({ behavior: 'smooth' });
+btn_user.addEventListener('click', (e) => {
+   e.preventDefault();
+   document.querySelector('body').scrollTop(0);
 });

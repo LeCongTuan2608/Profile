@@ -299,7 +299,7 @@ body{
 }
 
 .toolbar{
-    width:  auto;
+    width:  100%;
     border-radius: 20px;
     position: fixed;
     font-size: 25px;
@@ -697,7 +697,9 @@ background-color: #a5e296;
         margin: 0 20% 0 20%;
 
     }
-
+    .toolbar{
+        width: auto;
+    }
 }
 @media screen and (max-width:567px){
     .contents{
