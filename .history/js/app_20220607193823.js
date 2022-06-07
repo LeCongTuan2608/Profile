@@ -70,6 +70,7 @@ bgr_change();
 const btn_user = document.querySelector('.user');
 const btn_information = document.querySelector('.information');
 const btn_skills = document.querySelector('.skills');
+
 // window.addEventListener('scroll', function () {
 //    document.getElementById('showScroll');
 //    console.log(window.pageYOffset);
@@ -86,6 +87,6 @@ btn_skills.addEventListener('click', () => {
 
 const Xem_Them = document.querySelector('.see');
 console.log(Xem_Them);
-Xem_Them.addEventListener('click', () => {
-   alert('Vì một số lí do nên bạn không thể xem được!!');
+btn_Xem.addEventListener('click', () => {
+   alert('chào');
 });
