@@ -37,11 +37,11 @@ palette.addEventListener('click', function () {
 const Xem_Them = document.querySelector('.see');
 Xem_Them.addEventListener('click', () => {});
 
-// const eye_phone = document.getElementById('eye-phone');
-// const box_question = document.querySelector('.box-question');
-// eye_phone.addEventListener('click', () => {
-//    box_question.classList.add('open');
-// });
+const eye_phone = document.getElementById('eye-phone');
+const box_question = document.querySelector('.box-question');
+eye_phone.addEventListener('click', () => {
+   box_question.classList.add('open');
+});
 
 function bgr_change() {
    for (let i = 0; i < bgr_colors.length; i++) {

@@ -409,16 +409,16 @@ body {
    display: none;
 }
 .navigation-fb a > ion-icon:hover {
-   background-color: #408ff1;
+   background-color: rgb(153, 159, 248);
 }
 .navigation-fb:hover span {
    position: absolute;
    display: block;
-   background-color: #408ff1;
+   background-color: rgb(153, 159, 248);
    border-radius: 40px;
    padding: 5px;
    font-size: 18px;
-   top: -90%;
+   top: -95%;
    left: -50%;
    font-weight: 700;
    animation: intro ease 0.5s;
@@ -429,7 +429,7 @@ body {
    content: '';
    width: 13px;
    height: 13px;
-   background-color: #408ff1;
+   background-color: rgb(153, 159, 248);
    clip-path: polygon(50% 100%, 0 0, 100% 0);
    top: -25%;
    left: 30%;
@@ -444,16 +444,16 @@ body {
    display: none;
 }
 .navigation-ins a > ion-icon:hover {
-   background-color: rgb(206, 92, 92);
+   background-color: rgb(64, 173, 177);
 }
 .navigation-ins:hover span {
    position: absolute;
    display: block;
-   background-color: rgb(206, 92, 92);
+   background-color: rgb(64, 173, 177);
    border-radius: 40px;
    padding: 5px;
    font-size: 18px;
-   top: -90%;
+   top: -95%;
    left: -50%;
    font-weight: 700;
    animation: intro ease 0.5s;
@@ -464,7 +464,7 @@ body {
    content: '';
    width: 13px;
    height: 13px;
-   background-color: rgb(206, 92, 92);
+   background-color: rgb(64, 173, 177);
    clip-path: polygon(50% 100%, 0 0, 100% 0);
    top: -25%;
    left: 30%;
@@ -482,6 +482,8 @@ body {
    display: flex;
    flex-direction: column;
    justify-content: space-around;
+   padding: 0;
+   margin: 0;
 }
 .contact-info span {
    font-size: 18px;
@@ -489,15 +491,12 @@ body {
    overflow: hidden;
    white-space: nowrap;
    text-overflow: ellipsis;
+   padding: 0;
+   margin: 0;
 }
 .contact-info span ion-icon {
-   font-size: 20px;
-   transform: translateY(3px);
-   padding: 0 5px;
-   cursor: pointer;
-}
-.contact-info span ion-icon:active {
-   color: red;
+   padding: 0;
+   margin: 0;
 }
 .contact-info .see {
    cursor: pointer;
@@ -645,35 +644,6 @@ body {
 }
 .list-project ul li a:hover {
    color: rgb(53, 138, 213);
-}
-
-.box-question {
-   position: fixed;
-   top: 0;
-   left: 0;
-   right: 0;
-   bottom: 0;
-   background-color: rgba(rgb(186, 186, 186), 0.5);
-   display: none;
-}
-.box-child {
-   position: absolute;
-   left: 30%;
-   right: 30%;
-   top: 50%;
-   transform: translateY(-50%);
-   border-radius: 15px;
-   background-color: white;
-   box-shadow: rgb(137, 137, 137) 0px 5px 10px 0px;
-   animation: intro ease 1s;
-}
-.question {
-   padding: 30px 20px;
-}
-
-.submit-form {
-   width: 50px;
-   height: 20px;
 }
 @keyframes intro {
    from {

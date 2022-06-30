@@ -14,11 +14,6 @@ box_container.addEventListener('click', function () {
 list_project.addEventListener('click', function (event) {
    event.stopPropagation();
 });
-// const box_child_question = document.querySelector('.box-child');
-// box_child_question.addEventListener('click', function (event) {
-//    event.stopPropagation();
-// });
-
 const palette = document.querySelector('.palette');
 const list_color = document.querySelector('.list-color ul');
 var bgr_colors = document.querySelectorAll('.bgr-color');
@@ -34,15 +29,9 @@ palette.addEventListener('click', function () {
       click = true;
    }
 });
-const Xem_Them = document.querySelector('.see');
-Xem_Them.addEventListener('click', () => {});
 
-// const eye_phone = document.getElementById('eye-phone');
-// const box_question = document.querySelector('.box-question');
-// eye_phone.addEventListener('click', () => {
-//    box_question.classList.add('open');
-// });
-
+const eye_phone = document.getElementById('eye-phone');
+console.log(eye_phone);
 function bgr_change() {
    for (let i = 0; i < bgr_colors.length; i++) {
       bgr_colors[i].addEventListener('click', function () {
@@ -95,4 +84,10 @@ btn_information.addEventListener('click', () => {
 });
 btn_skills.addEventListener('click', () => {
    document.querySelector('.my-skills').scrollIntoView({ behavior: 'smooth' });
+});
+
+const Xem_Them = document.querySelector('.see');
+console.log(Xem_Them);
+Xem_Them.addEventListener('click', () => {
+   alert('Vì một số lí do nên bạn không thể xem được!!');
 });

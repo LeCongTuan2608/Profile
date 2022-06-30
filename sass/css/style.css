@@ -29,7 +29,7 @@ body {
 }
 
 .bgr-color-1 {
-  background-image: linear-gradient(90deg, #74EBD5 0%, #9FACE6 100%);
+  background-image: linear-gradient(90deg, #74ebd5 0%, #9face6 100%);
   background-attachment: fixed;
 }
 
@@ -298,7 +298,7 @@ body {
 
 .list-color ul li:first-child {
   margin-bottom: 10px;
-  background-image: linear-gradient(90deg, #74EBD5 0%, #9FACE6 100%);
+  background-image: linear-gradient(90deg, #74ebd5 0%, #9face6 100%);
 }
 
 .list-color ul li:nth-of-type(2) {
@@ -444,17 +444,17 @@ body {
 }
 
 .navigation-fb a > ion-icon:hover {
-  background-color: #999ff8;
+  background-color: #408ff1;
 }
 
 .navigation-fb:hover span {
   position: absolute;
   display: block;
-  background-color: #999ff8;
+  background-color: #408ff1;
   border-radius: 40px;
   padding: 5px;
   font-size: 18px;
-  top: -95%;
+  top: -90%;
   left: -50%;
   font-weight: 700;
   animation: intro ease 0.5s;
@@ -466,7 +466,7 @@ body {
   content: "";
   width: 13px;
   height: 13px;
-  background-color: #999ff8;
+  background-color: #408ff1;
   clip-path: polygon(50% 100%, 0 0, 100% 0);
   top: -25%;
   left: 30%;
@@ -483,17 +483,17 @@ body {
 }
 
 .navigation-ins a > ion-icon:hover {
-  background-color: #40adb1;
+  background-color: #ce5c5c;
 }
 
 .navigation-ins:hover span {
   position: absolute;
   display: block;
-  background-color: #40adb1;
+  background-color: #ce5c5c;
   border-radius: 40px;
   padding: 5px;
   font-size: 18px;
-  top: -95%;
+  top: -90%;
   left: -50%;
   font-weight: 700;
   animation: intro ease 0.5s;
@@ -505,7 +505,7 @@ body {
   content: "";
   width: 13px;
   height: 13px;
-  background-color: #40adb1;
+  background-color: #ce5c5c;
   clip-path: polygon(50% 100%, 0 0, 100% 0);
   top: -25%;
   left: 30%;
@@ -533,6 +533,17 @@ body {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
+}
+
+.contact-info span ion-icon {
+  font-size: 20px;
+  transform: translateY(3px);
+  padding: 0 5px;
+  cursor: pointer;
+}
+
+.contact-info span ion-icon:active {
+  color: red;
 }
 
 .contact-info .see {
@@ -564,11 +575,11 @@ body {
 }
 
 .text-color-1 {
-  background-image: linear-gradient(-225deg, #AC32E4 0%, #7918F2 48%, #4801FF 100%) !important;
+  background-image: linear-gradient(-225deg, #ac32e4 0%, #7918f2 48%, #4801ff 100%) !important;
 }
 
 .text-color-2 {
-  background-image: linear-gradient(-225deg, #A445B2 0%, #D41872 52%, #FF0066 100%) !important;
+  background-image: linear-gradient(-225deg, #a445b2 0%, #d41872 52%, #ff0066 100%) !important;
 }
 
 .text-color-3 {
@@ -692,6 +703,37 @@ body {
 
 .list-project ul li a:hover {
   color: #358ad5;
+}
+
+.box-question {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(186, 186, 186, 0.5);
+  display: none;
+}
+
+.box-child {
+  position: absolute;
+  left: 30%;
+  right: 30%;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 15px;
+  background-color: white;
+  box-shadow: #898989 0px 5px 10px 0px;
+  animation: intro ease 1s;
+}
+
+.question {
+  padding: 30px 20px;
+}
+
+.submit-form {
+  width: 50px;
+  height: 20px;
 }
 
 @keyframes intro {

@@ -654,7 +654,7 @@ body {
    right: 0;
    bottom: 0;
    background-color: rgba(rgb(186, 186, 186), 0.5);
-   display: none;
+   //    display: none;
 }
 .box-child {
    position: absolute;
@@ -667,13 +667,14 @@ body {
    box-shadow: rgb(137, 137, 137) 0px 5px 10px 0px;
    animation: intro ease 1s;
 }
-.question {
-   padding: 30px 20px;
-}
-
-.submit-form {
-   width: 50px;
-   height: 20px;
+.box-question.close {
+   position: absolute;
+   width: 30px;
+   height: 30px;
+   right: 2%;
+   top: 2%;
+   font-size: 25px;
+   cursor: pointer;
 }
 @keyframes intro {
    from {
