@@ -535,14 +535,14 @@ body {
   text-overflow: ellipsis;
 }
 
-.contact-info span ion-icon {
+.contact-info .phone ion-icon {
   font-size: 20px;
   transform: translateY(3px);
   padding: 0 5px;
   cursor: pointer;
 }
 
-.contact-info span ion-icon:active {
+.contact-info .phone ion-icon:active {
   color: red;
 }
 
@@ -650,7 +650,7 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(186, 186, 186, 0.5);
+  background-color: rgba(215, 215, 215, 0.3);
   display: none;
 }
 
@@ -711,29 +711,89 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(186, 186, 186, 0.5);
+  background-color: rgba(215, 215, 215, 0.3);
   display: none;
 }
 
-.box-child {
+.question {
+  padding: 10px;
   position: absolute;
   left: 30%;
   right: 30%;
   top: 50%;
   transform: translateY(-50%);
   border-radius: 15px;
-  background-color: white;
   box-shadow: #898989 0px 5px 10px 0px;
   animation: intro ease 1s;
+  color: white;
+  background: url("https://images.pexels.com/photos/2559941/pexels-photo-2559941.jpeg") center center/cover no-repeat;
 }
 
-.question {
-  padding: 30px 20px;
+.card-question {
+  background-color: rgba(186, 186, 186, 0.5);
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 10px;
+  position: relative;
+  border: 2px solid transparent;
+  transition: 0.25s ease;
 }
 
-.submit-form {
-  width: 50px;
-  height: 20px;
+.card-question-red {
+  border: 2px solid red;
+}
+
+.card-question:focus-within {
+  border-color: #388eff;
+}
+
+.legend {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 14px;
+  color: #ebebeb;
+  pointer-events: none;
+  user-select: none;
+}
+
+.input-answer:focus-within + .legend {
+  top: 15%;
+  transition: 0.5s ease;
+}
+
+.input-answer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 20px;
+}
+
+.input-answer input {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  color: white;
+  width: 100%;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  margin: 15px 0 5px 0;
+}
+
+.check-answer {
+  padding: 10px 15px;
+  color: white;
+  border-radius: 23px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  background-color: #5a89be;
 }
 
 @keyframes intro {
