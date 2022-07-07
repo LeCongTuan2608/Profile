@@ -608,8 +608,8 @@ body {
 }
 .list-project {
    position: absolute;
-   left: 35%;
-   right: 35%;
+   left: 30%;
+   right: 30%;
    top: 50%;
    transform: translateY(-50%);
    border-radius: 10px;
@@ -628,7 +628,6 @@ body {
    top: 2%;
    font-size: 25px;
    cursor: pointer;
-   color: white;
 }
 .list-project ion-icon:hover {
    color: red;

@@ -660,14 +660,17 @@ body {
 
 .list-project {
   position: absolute;
-  left: 30%;
-  right: 30%;
+  left: 35%;
+  right: 35%;
   top: 50%;
   transform: translateY(-50%);
-  border-radius: 15px;
-  background-color: white;
+  border-radius: 10px;
   box-shadow: #898989 0px 5px 10px 0px;
   animation: intro ease 1s;
+  background-image: url("https://bom.so/UZ5aVo");
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .close {
@@ -678,6 +681,7 @@ body {
   top: 2%;
   font-size: 25px;
   cursor: pointer;
+  color: white;
 }
 
 .list-project ion-icon:hover {
@@ -698,11 +702,11 @@ body {
 
 .list-project ul li a {
   text-decoration: none;
-  color: black;
+  color: white;
 }
 
 .list-project ul li a:hover {
-  color: #358ad5;
+  color: #3eac25;
 }
 
 .box-question {
@@ -726,7 +730,10 @@ body {
   box-shadow: #898989 0px 5px 10px 0px;
   animation: intro ease 1s;
   color: white;
-  background: url("https://images.pexels.com/photos/2559941/pexels-photo-2559941.jpeg") center center/cover no-repeat;
+  background: url("https://images.pexels.com/photos/2559941/pexels-photo-2559941.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .card-question {
@@ -856,6 +863,11 @@ body {
     left: 25%;
     right: 25%;
   }
+
+  .question {
+    left: 20%;
+    right: 20%;
+  }
 }
 @media screen and (max-width: 710px) {
   .list-project {
@@ -868,6 +880,11 @@ body {
     white-space: nowrap;
     text-overflow: ellipsis;
     margin: 0 20% 0 20%;
+  }
+
+  .question {
+    left: 20%;
+    right: 20%;
   }
 }
 @media screen and (max-width: 567px) {
@@ -891,6 +908,11 @@ body {
     padding-top: 30px;
     display: block;
     margin: 0 10% 0 10%;
+  }
+
+  .question {
+    left: 10%;
+    right: 10%;
   }
 }
 @media screen and (max-width: 415px) {

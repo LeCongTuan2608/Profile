@@ -608,11 +608,12 @@ body {
 }
 .list-project {
    position: absolute;
-   left: 35%;
-   right: 35%;
+   left: 30%;
+   right: 30%;
    top: 50%;
    transform: translateY(-50%);
    border-radius: 10px;
+   padding: 20px;
    box-shadow: rgb(137, 137, 137) 0px 5px 10px 0px;
    animation: intro ease 1s;
    background-image: url('https://bom.so/UZ5aVo');
@@ -628,7 +629,6 @@ body {
    top: 2%;
    font-size: 25px;
    cursor: pointer;
-   color: white;
 }
 .list-project ion-icon:hover {
    color: red;
@@ -794,10 +794,6 @@ body {
       left: 25%;
       right: 25%;
    }
-   .question {
-      left: 20%;
-      right: 20%;
-   }
 }
 @media screen and (max-width: 710px) {
    .list-project {
@@ -809,10 +805,6 @@ body {
       white-space: nowrap;
       text-overflow: ellipsis;
       margin: 0 20% 0 20%;
-   }
-   .question {
-      left: 20%;
-      right: 20%;
    }
 }
 @media screen and (max-width: 567px) {
@@ -833,10 +825,6 @@ body {
       padding-top: 30px;
       display: block;
       margin: 0 10% 0 10%;
-   }
-   .question {
-      left: 10%;
-      right: 10%;
    }
 }
 @media screen and (max-width: 415px) {
